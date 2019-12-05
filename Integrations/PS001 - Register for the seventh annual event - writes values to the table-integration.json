@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5de783d86c46f",
+        "Name": "PS001 - Register for the seventh annual event - writes values to the table",
+        "Type": "DATABASE",
+        "LIM_id": "83ef69d1-2c5e-11e5-ad20-22000a7a05f5",
+        "Editable": true,
+        "LIM_name": "Portsmouth",
+        "Category": "Community",
+        "data_type": "integration-lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"systemID\":\"5de90e17b67d1\",\"systemName\":\"FStepPublicSector_prod\",\"query\":\"exec PublicSectorEventProc\\t\\n   \\t  @Date = {current_date}\\n      ,@Reference = {case_ref}\\n      ,@Organisation = {organisationName}\\n      ,@JobTitle = {jobTitle}\\n      ,@FullName = {fullName}\\n      ,@Email = {emailAddress}\\n      ,@Telephone = {telephone}\\n      ,@DietaryRequirements = {dietaryRequirements}\",\"results_page_columns_db\":\"\",\"secure_fields_db_database\":\"\",\"escapeTokens\":\"yes\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "5de79de9199a4",
+        "Name": "PS004 - Register for the seventh annual event - email to the customer",
+        "Type": "EMAIL",
+        "LIM_id": "83ef69d1-2c5e-11e5-ad20-22000a7a05f5",
+        "Editable": true,
+        "LIM_name": "Portsmouth",
+        "Category": "Forms Tasks",
+        "data_type": "integration-lookup",
+        "allow_offline": 0,
+        "Output_template": "{\"subject\":\"Public Sector update - thank you for registering  - {case_ref}\",\"fromName\":\"{NoReplyEmail_N} \",\"from\":\"{NoReplyEmail}\",\"recipients_to\":\"{emailAddress}\",\"recipients_cc\":\"\",\"recipients_bcc\":\"\",\"pdf_attachments\":\"\",\"body\":\"<p>Dear {fullName2},</p>\\n\\n<p>Thank you for registering for the seventh annual Public Sector update for Payroll and HR Professionals.You are now included on the delegate list and I look forward to seeing you in February. As delegate places are limited, if you subsequently find that you are unable to attend, please email <a href=\\\"mailto:shaun.tetley@portsmouthcc.gov.uk?Subject=Unable to attend event 'Public Sector update for Payroll and HR Professionals'\\\" target=\\\"_top\\\">shaun.tetley@portsmouthcc.gov.uk</a> as soon as possible. The event details and agenda are as follows:</p>\\n\\n<p>Date: Thursday 6 February 2020</p>\\n\\n<p>Location: PwC, 1 Embankment Place, London, WC2N 6RH</p>\\n\\n<p>Timings: 09:25 start, finishing at 16:00</p>\\n\\n<p>Agenda:</p>\\n\\n<ul>\\n\\t<li>09:00 - Coffee and registration</li>\\n\\t<li>09:25 - Welcome and opening address: Shaun Tetley, CIPP and Caroline Rai, PWC</li>\\n\\t<li>09:30 - Pension Hot Topics - Henry Tapper</li>\\n\\t<li>10:00 - Employee engagement - Andrew Moffitt (FPCG)</li>\\n\\t<li>10:30 - CIPP HR/Payroll legislation update - Jill Smith (CIPP)</li>\\n\\t<li>11:00 - Update from The Pension Regulator - Andy Nicholls (TPR)</li>\\n\\t<li>11:30 - Comfort break</li>\\n\\t<li>11:50 - Collection of Council Tax Debt - Michael Sowerby (Cabinet Office)</li>\\n\\t<li>12:15 - Employment law update - Jade Linton (Thursfields Law Firm)</li>\\n\\t<li>13:00 - Lunch and Networking</li>\\n\\t<li>14:00 - IR35 and Holiday pay - Caroline Rai (PwC)</li>\\n\\t<li>14:45 - Local Government Pension Scheme Update - Jeff Houston (LGPC)</li>\\n\\t<li>15:30 - HMRC update</li>\\n\\t<li>16:00 - Closing Remarks</li>\\n</ul>\\n\\n<p>Your registration details will be securely held by Shaun Tetley for the purposes of inviting you to future events, sending out the slides from the event and generally keeping you up to date with any relevant items of interest.</p>\\n\\n<p>You can opt out of future communications by emailing <a href=\\\"mailto:shaun.tetley@portsmouthcc.gov.uk?Subject=Request to opt out of future communication\\\" target=\\\"_top\\\">shaun.tetley@portsmouthcc.gov.uk.</a></p>\\n\\n<p></p>\\n\\n<p>Yours sincerely,</p>\\n\\n<p>Shaun Tetley</p>\\n\\n<p>Chair of Public Sector CIPP</p>\",\"attachments\":\"\"}",
+        "log_only_on_error": 0,
+        "error_notification": "{\"LIM_id\":\"3f07ecf4-0dfa-11e2-b0b9-12313b03ed59\",\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+    }
+]

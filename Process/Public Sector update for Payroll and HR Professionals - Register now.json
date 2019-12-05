@@ -1,0 +1,980 @@
+{
+  "processName": "Public Sector update for Payroll and HR Professionals - Register now",
+  "processDescription": "",
+  "props": {
+    "id": "AF-Process-9ebb1397-9139-42cb-ada1-92262443f332",
+    "category": "AF-Category-cafe06e5-ffa4-439d-8018-75d1e17707d8",
+    "tags": "",
+    "viewGroup": null,
+    "viewGroupToken": null,
+    "date_due": "",
+    "date_due_warn": "",
+    "showCaseReference": false,
+    "isSubform": false,
+    "notes": false,
+    "initial_stage": "Stage 1",
+    "initial_stage_id": "AF-Stage-fa3dfa69-6a46-48f9-b9f4-fe89eda034b2",
+    "prefix": "PS",
+    "serverSubmit": true,
+    "isPublished": true
+  },
+  "stages": {
+    "Stage 1": {
+      "url": "Stage-1.html",
+      "id": "AF-Stage-fa3dfa69-6a46-48f9-b9f4-fe89eda034b2",
+      "name": "Stage 1",
+      "props": {
+        "form": "AF-Form-60a39b97-db0e-4937-87d0-f50ee6437ed5",
+        "xpos": 20,
+        "ypos": 20,
+        "group": null,
+        "integrations": [
+          {
+            "id": "5de783d86c46f",
+            "condition": "",
+            "repeat_against": "",
+            "type_condition": "submission",
+            "timed_condition": "",
+            "repeat_interval": ""
+          },
+          {
+            "id": "5de79595040f9",
+            "condition": "{numberRecords} is '149'",
+            "repeat_against": "",
+            "type_condition": "submission",
+            "timed_condition": "",
+            "repeat_interval": "",
+            "conditionInputs": [
+              {
+                "element": "select",
+                "value": "numberRecords",
+                "type": [
+                  "fields"
+                ]
+              },
+              {
+                "element": "select",
+                "value": "is",
+                "type": [
+                  "_number"
+                ]
+              },
+              {
+                "element": "number",
+                "value": "149",
+                "type": [
+                  "literal"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5de79de9199a4",
+            "condition": "{emailAddress} isnt ''",
+            "repeat_against": "",
+            "type_condition": "submission",
+            "timed_condition": "",
+            "repeat_interval": "",
+            "conditionInputs": [
+              {
+                "element": "select",
+                "value": "emailAddress",
+                "type": [
+                  "fields"
+                ]
+              },
+              {
+                "element": "select",
+                "value": "isnt ''",
+                "type": [
+                  "_core"
+                ]
+              }
+            ]
+          }
+        ],
+        "user_token": null,
+        "group_token": null,
+        "stopOnFailure": false,
+        "useNewPaymentMethod": false,
+        "textColor": "#ffffff",
+        "user": "__originator__",
+        "backgroundColor": "#0033cc",
+        "date_due": "",
+        "date_due_warn": "",
+        "notification": {
+          "notify_assigned_users": false,
+          "recipients_to": null,
+          "subject": null,
+          "body": null
+        },
+        "escalation": {
+          "notify_assigned_users": true,
+          "recipients_to": null,
+          "subject": null,
+          "body": null,
+          "date": null,
+          "date_type": null,
+          "user_token": null,
+          "group_token": null,
+          "user": null,
+          "group": null,
+          "condition": null,
+          "conditionInputs": {}
+        },
+        "caseViewOption": false,
+        "startSection": "",
+        "usenewPaymentMethod": false,
+        "formDefinition": {
+          "formName": "Public Sector update for Payroll and HR Professionals - Register now",
+          "formDescription": "",
+          "props": {
+            "id": "AF-Form-60a39b97-db0e-4937-87d0-f50ee6437ed5",
+            "category": "AF-Category-cafe06e5-ffa4-439d-8018-75d1e17707d8",
+            "saveSubmissionData": true,
+            "usePHPIntegrations": true,
+            "serverSideLookupValidation": false,
+            "tags": "",
+            "navigateAwayWarning": "Are you sure you want to navigate away? All progress in this form will be lost.",
+            "navigateAwayWarn": true,
+            "validateOnInit": true,
+            "stopOnFailure": false,
+            "stickyError": false,
+            "showFormReference": false,
+            "mustBeValid": true,
+            "hideHeader": false,
+            "isPublished": false,
+            "isSubform": false,
+            "integrations": [],
+            "notes": false,
+            "submission": {
+              "message": "<p>Thank you for registering for this event. You will receive a confirmation email shortly.</p>\n<p>Your reference number is {summary_ref}.</p>",
+              "api": "/form/submit/",
+              "download": "Download PDF",
+              "cancel_redirect": null,
+              "continue": "Continue",
+              "conditionInputs": [
+                {
+                  "element": "select",
+                  "value": "numberRecords",
+                  "type": [
+                    "fields"
+                  ]
+                },
+                {
+                  "element": "select",
+                  "value": ">=",
+                  "type": [
+                    "_number"
+                  ]
+                },
+                {
+                  "element": "number",
+                  "value": "200",
+                  "type": [
+                    "literal"
+                  ]
+                }
+              ],
+              "showDownload": false,
+              "showMessage": true,
+              "serverSubmit": true,
+              "redirect": null,
+              "condition": "{numberRecords} >= '200'",
+              "printableIntegrationId": "",
+              "newPaymentMethod": false,
+              "prefix": "PS"
+            },
+            "save": {
+              "lim": "3f07ecf4-0dfa-11e2-b0b9-12313b03ed59",
+              "displayCondition": "",
+              "conditionInputs": "",
+              "redirect": null,
+              "allow": false,
+              "fromName": "",
+              "message": "",
+              "subject": "",
+              "mail": false,
+              "from": "",
+              "disableSaveNotify": false
+            },
+            "hideSaveUrl": false,
+            "usePHPIntregration": false,
+            "integrationDefinition": {
+              "5de7856b5a5a0": {
+                "Editable": true,
+                "ID": "5de7856b5a5a0",
+                "Name": "PS002 - Register for the seventh annual event - counts records in the table",
+                "Type": "DATABASE",
+                "LIM_name": "Portsmouth",
+                "Category": "Forms Tasks",
+                "data_type": "integration-lookup",
+                "allow_offline": 0,
+                "Output_template": "{\"systemID\":\"5de90e17b67d1\",\"systemName\":\"FStepPublicSector_prod\",\"query\":\"exec PublicSectorEventCount\",\"results_page_columns_db\":\"\",\"secure_fields_db_database\":\"\",\"escapeTokens\":\"yes\"}",
+                "log_only_on_error": 0,
+                "error_notification": "{\"LIM_name\":\"LIM14\",\"recipients_to\":\"Daniela.Dutu@portsmouthcc.gov.uk\"}"
+              },
+              "590c3dc26118c": {
+                "Editable": true,
+                "ID": "590c3dc26118c",
+                "Name": "CTB062 - Titles List",
+                "Type": "HTTP",
+                "LIM_name": "LIM14",
+                "Category": "z Global",
+                "data_type": "lookup",
+                "allow_offline": 0,
+                "Output_template": "{\"method\":\"GET\",\"url\":\"https://{host}/apibroker/?key={apibrokerKey}&pass={apibrokerPass}&api=getCiviVars&app_name=AchieveService&var=titles\",\"show_headers\":\"no\",\"responseType\":\"JSON\",\"strip_namespaces\":\"1\",\"path_to_values\":\"RepeatableNode\",\"fields\":\"{\\n\\n\\\"name\\\":\\\"name\\\",\\n\\n\\\"label\\\":\\\"display\\\"\\n\\n}\",\"xslt_stylesheet\":\"\",\"results_page_columns\":\"\",\"secure_fields_db_http\":\"\"}",
+                "log_only_on_error": 1,
+                "error_notification": "{\"LIM_name\":\"LIM14\",\"recipients_to\":\"daniel.gregory@portsmouthcc.gov.uk\"}"
+              }
+            }
+          },
+          "sections": [
+            {
+              "url": "Your-details.html",
+              "id": "AF-Section-cdae69fd-59f0-4970-89c0-22e069432b0f",
+              "props": {
+                "hideCancel": false,
+                "conditionInputs": "",
+                "displayCondition": "",
+                "validationInputs": "",
+                "validation": "",
+                "validationMessage": "This Section is Invalid",
+                "validationLookup": {
+                  "enableLookup": false,
+                  "lookupID": "",
+                  "lookupName": "",
+                  "lookupValidation": "",
+                  "lookupOperator": ""
+                }
+              },
+              "name": "Your details",
+              "fields": [
+                {
+                  "type": "autoLookup",
+                  "props": {
+                    "label": "autoLookup 1",
+                    "dataName": "autolookup1",
+                    "lookup": "5de7856b5a5a0",
+                    "lookupCondition": "once",
+                    "lookupButton": null,
+                    "noResultsMessage": "",
+                    "noRetryOnIntegrationFailure": false,
+                    "preventRunningOnInitialisation": false,
+                    "displayName": "",
+                    "displayCondition": ""
+                  },
+                  "id": "AF-Field-a629218b-22eb-4839-b330-1ac9c5fbe1f4"
+                },
+                {
+                  "type": "number",
+                  "props": {
+                    "label": "Number records",
+                    "dataName": "numberRecords",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "",
+                    "helpText": "",
+                    "hidden": true,
+                    "readOnly": true,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "prefix": null,
+                    "suffix": null,
+                    "width": null,
+                    "decimalPlaces": null,
+                    "numberToText": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": null,
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": false,
+                    "minimumValue": "",
+                    "maximumValue": "",
+                    "validationCondition": "",
+                    "mandatoryMessage": "This field is required",
+                    "minimumValueMessage": "Please input _min_value_ or more",
+                    "maximumValueMessage": "Please input _max_value_ or less",
+                    "validationConditionMessage": "This field is invalid"
+                  },
+                  "conditionInputs": [],
+                  "id": "AF-Field-7ef3eb09-527e-4843-90fc-e0fc3565493c"
+                },
+                {
+                  "type": "html",
+                  "props": {
+                    "label": "html 2",
+                    "dataName": "html2",
+                    "displayName": "",
+                    "outerClass": "",
+                    "width": "",
+                    "showInSummary": false,
+                    "content": "<p><font color=\"red\"> <p>Unfortunately there are no more available spaces for this event. Please contact <a href=\"mailto:shaun.tetley@portsmouthcc.gov.uk?Subject=No spaces left at the Seventh annual event\" target=\"_top\">shaun.tetley@portsmouthcc.gov.uk</a> if you would like to discuss further.</p></font></p>",
+                    "displayCondition": "{numberRecords} >= '200'"
+                  },
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": ">=",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ],
+                  "id": "AF-Field-16e03b65-bb3c-499d-9e11-f815fadfc55c"
+                },
+                {
+                  "type": "select",
+                  "props": {
+                    "minimumChoices": "",
+                    "maximumChoices": "",
+                    "minimumChoicesMessage": "Please select at least _min_value_ choices",
+                    "maximumChoicesMessage": "Please select no more than _max_value_ choices",
+                    "label": "Title",
+                    "dataName": "Title_out",
+                    "labelPosition": "alignLeft",
+                    "defaultType": "specific",
+                    "defaultValue": null,
+                    "defaultValueText": null,
+                    "listSource": "lookup",
+                    "helpText": "",
+                    "readOnly": false,
+                    "allowOther": false,
+                    "summaryField": false,
+                    "lookup": "590c3dc26118c",
+                    "lookupCondition": "once",
+                    "lookupButton": null,
+                    "noResultsMessage": "",
+                    "tokenName": null,
+                    "listOfValues": null,
+                    "displayName": true,
+                    "outerClass": "",
+                    "labelClass": "",
+                    "inputClass": "",
+                    "width": "",
+                    "selectLabel": "Select...",
+                    "allowMultiple": false,
+                    "hideWhenBlank": false,
+                    "hidden": false,
+                    "enableFilter": false,
+                    "displayCondition": "{numberRecords} < '200'",
+                    "selectCondition": "",
+                    "mandatoryCondition": "{subParam} contains 'mTi'",
+                    "readonlyCondition": "{subParam} contains 'dNmro' or {subParam} contains 'AFlro'",
+                    "mandatory": false,
+                    "mandatoryMessage": "This information is required",
+                    "preventRunningOnInitialisation": true
+                  },
+                  "id": "AF-Field-96d47072-a080-4c80-a703-c5877a6cfcaa",
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": "<",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "label": "First name",
+                    "dataName": "firstName",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "",
+                    "helpText": "",
+                    "hidden": false,
+                    "readOnly": false,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "outputFormat": "normal",
+                    "currencyPrefix": null,
+                    "width": null,
+                    "inputMask": null,
+                    "inputMaskPlaceholder": null,
+                    "lengthCount": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": "{numberRecords} < '200'",
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": true,
+                    "minimumLength": null,
+                    "maximumLength": null,
+                    "validationCondition": null,
+                    "validationMask": null,
+                    "mandatoryMessage": "This field is required",
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationConditionMessage": "This field is invalid"
+                  },
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": "<",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ],
+                  "id": "AF-Field-cb016e9d-c516-4998-9458-9683bb2530e1"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "label": "Last name",
+                    "dataName": "lastName",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "",
+                    "helpText": "",
+                    "hidden": false,
+                    "readOnly": false,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "outputFormat": "normal",
+                    "currencyPrefix": null,
+                    "width": null,
+                    "inputMask": null,
+                    "inputMaskPlaceholder": null,
+                    "lengthCount": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": "{numberRecords} < '200'",
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": true,
+                    "minimumLength": null,
+                    "maximumLength": null,
+                    "validationCondition": null,
+                    "validationMask": null,
+                    "mandatoryMessage": "This field is required",
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationConditionMessage": "This field is invalid"
+                  },
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": "<",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ],
+                  "id": "AF-Field-8d0cb104-6ac9-4dee-a75b-5f901b18adba"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "label": "Organisation name",
+                    "dataName": "organisationName",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "",
+                    "helpText": "",
+                    "hidden": false,
+                    "readOnly": false,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "outputFormat": "normal",
+                    "currencyPrefix": null,
+                    "width": null,
+                    "inputMask": null,
+                    "inputMaskPlaceholder": null,
+                    "lengthCount": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": "{numberRecords} < '200'",
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": true,
+                    "minimumLength": "",
+                    "maximumLength": "",
+                    "validationCondition": "",
+                    "validationMask": "",
+                    "mandatoryMessage": "This information is required",
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationConditionMessage": "This field is invalid",
+                    "validationMaskMessageValue": "Select..."
+                  },
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": "<",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ],
+                  "id": "AF-Field-22f6dd92-81f6-49f3-8bbb-6e6fd6b982c9"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "label": "Job title",
+                    "dataName": "jobTitle",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "",
+                    "helpText": "",
+                    "hidden": false,
+                    "readOnly": false,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "outputFormat": "normal",
+                    "currencyPrefix": null,
+                    "width": null,
+                    "inputMask": null,
+                    "inputMaskPlaceholder": null,
+                    "lengthCount": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": "{numberRecords} < '200'",
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": true,
+                    "minimumLength": "",
+                    "maximumLength": "",
+                    "validationCondition": "",
+                    "validationMask": "",
+                    "mandatoryMessage": "This information is required",
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationConditionMessage": "This field is invalid",
+                    "validationMaskMessageValue": "Select..."
+                  },
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": "<",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ],
+                  "id": "AF-Field-4331c3bb-1936-4efa-9858-0b273cc7623e"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "label": "Email address",
+                    "dataName": "emailAddress",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "",
+                    "helpText": "",
+                    "hidden": false,
+                    "readOnly": false,
+                    "summaryField": false,
+                    "displayName": "true",
+                    "outerClass": "",
+                    "labelClass": "",
+                    "inputClass": "",
+                    "outputFormat": "normal",
+                    "currencyPrefix": "",
+                    "width": "",
+                    "inputMask": "",
+                    "inputMaskPlaceholder": "",
+                    "lengthCount": false,
+                    "disableInitialTokenPopulation": null,
+                    "hideWhenBlank": false,
+                    "displayCondition": "{numberRecords} < '200'",
+                    "mandatory": true,
+                    "minimumLength": "",
+                    "maximumLength": "",
+                    "validationCondition": "",
+                    "validationMask": "/^[-a-z0-9~!$%^&*#_=+}{\\'?]+(\\.[-a-z0-9~!$%^&*#_=+}{\\'?]+)*@[a-z0-9][-a-z0-9_]*(\\.[-a-z0-9_]+)(\\.[a-z0-9]+)*$/gim",
+                    "mandatoryMessage": "Enter an email address - for example 'user@website.com'",
+                    "minimumLengthMessage": "This Field Requires More Text",
+                    "maximumLengthMessage": "This Field Requires Less Text",
+                    "validationMaskMessage": "Enter an email address - for example 'user@website.com'",
+                    "validationConditionMessage": "This Field Is Invalid",
+                    "mandatoryCondition": "{subParam} contains 'mEm'",
+                    "readonlyCondition": "{subParam} contains 'dCiro' or {subParam} contains 'AFlro'"
+                  },
+                  "id": "AF-Field-1d13c2ea-d4af-4176-a855-8801da70cacc",
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": "<",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "label": "Contact number",
+                    "dataName": "telephone",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "",
+                    "helpText": "",
+                    "hidden": false,
+                    "readOnly": false,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "outputFormat": "normal",
+                    "currencyPrefix": null,
+                    "width": null,
+                    "inputMask": null,
+                    "inputMaskPlaceholder": null,
+                    "lengthCount": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": "{numberRecords} < '200'",
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": false,
+                    "minimumLength": "",
+                    "maximumLength": "",
+                    "validationCondition": "",
+                    "validationMask": "/^\\(?(?:(?:0(?:0|11)\\)?[\\s-]?\\(?|\\+)?44\\)?[\\s-]?\\(?(?:0\\)?[\\s-]?\\(?)?|0)(?:\\d{5}\\)?[\\s-]?\\d{4,5}|\\d{4}\\)?[\\s-]?(?:\\d{5}|\\d{3}[\\s-]?\\d{3})|\\d{3}\\)?[\\s-]?\\d{3}[\\s-]?\\d{3,4}|\\d{2}\\)?[\\s-]?\\d{4}[\\s-]?\\d{4}|8(?:00[\\s-]?11[\\s-]?11|45[\\s-]?46[\\s-]?4\\d))(?:(?:[\\s-]?(?:x|ext\\.?\\s?|\\#)\\d+)?)$/gim",
+                    "mandatoryMessage": "This field is required",
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationConditionMessage": "This field is invalid",
+                    "validationMaskMessageValue": "UK Phones"
+                  },
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": "<",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ],
+                  "id": "AF-Field-23cfb9c3-2a6b-401c-8a62-d73c2bd4f846"
+                },
+                {
+                  "type": "textarea",
+                  "props": {
+                    "label": "Dietary requirements (please leave blank if none)",
+                    "dataName": "dietaryRequirements",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "",
+                    "helpText": "",
+                    "hidden": false,
+                    "readOnly": false,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "width": null,
+                    "lengthCount": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": "{numberRecords} < '200'",
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": false,
+                    "minimumLength": "",
+                    "maximumLength": "",
+                    "validationMask": "",
+                    "mandatoryMessage": "This information is required",
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationMaskMessageValue": "Select..."
+                  },
+                  "conditionInputs": [
+                    {
+                      "element": "select",
+                      "value": "numberRecords",
+                      "type": [
+                        "fields"
+                      ]
+                    },
+                    {
+                      "element": "select",
+                      "value": "<",
+                      "type": [
+                        "_number"
+                      ]
+                    },
+                    {
+                      "element": "number",
+                      "value": "200",
+                      "type": [
+                        "literal"
+                      ]
+                    }
+                  ],
+                  "id": "AF-Field-984da339-9355-41aa-93a9-cab11d04df3a"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "label": "fullName",
+                    "dataName": "fullName",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "trim(concat({Title_out} + ' ' +{firstName} + ' ' +{lastName}))",
+                    "helpText": "",
+                    "hidden": true,
+                    "readOnly": true,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "outputFormat": "normal",
+                    "currencyPrefix": null,
+                    "width": null,
+                    "inputMask": null,
+                    "inputMaskPlaceholder": null,
+                    "lengthCount": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": null,
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": false,
+                    "minimumLength": "",
+                    "maximumLength": "",
+                    "validationCondition": "",
+                    "validationMask": "",
+                    "mandatoryMessage": "This field is required",
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationConditionMessage": "This field is invalid",
+                    "validationMaskMessageValue": "Select..."
+                  },
+                  "conditionInputs": [],
+                  "id": "AF-Field-ec24df09-5ca8-489d-bf47-5d07c334a818"
+                },
+                {
+                  "type": "text",
+                  "props": {
+                    "label": "fullName2",
+                    "dataName": "fullName2",
+                    "labelPosition": "alignLeft",
+                    "defaultValue": "concat({firstName} + ' ' +{lastName})",
+                    "helpText": "",
+                    "hidden": true,
+                    "readOnly": true,
+                    "summaryField": false,
+                    "displayName": true,
+                    "outerClass": null,
+                    "labelClass": null,
+                    "inputClass": null,
+                    "outputFormat": "normal",
+                    "currencyPrefix": null,
+                    "width": null,
+                    "inputMask": null,
+                    "inputMaskPlaceholder": null,
+                    "lengthCount": null,
+                    "hideWhenBlank": null,
+                    "displayCondition": null,
+                    "mandatoryCondition": null,
+                    "readonlyCondition": null,
+                    "mandatory": false,
+                    "minimumLength": "",
+                    "maximumLength": "",
+                    "validationCondition": "",
+                    "validationMask": "",
+                    "mandatoryMessage": "This field is required",
+                    "minimumLengthMessage": "Please input at least _min_value_ characters",
+                    "maximumLengthMessage": "Please input no more than _max_value_ characters",
+                    "validationMaskMessage": "Please input text of the format: _validation_mask_",
+                    "validationConditionMessage": "This field is invalid",
+                    "validationMaskMessageValue": "Select..."
+                  },
+                  "conditionInputs": [],
+                  "id": "AF-Field-94007ce3-d9e0-43c1-96bb-be81bdc7abd4"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "routes": {},
+      "populateFields": [
+        {
+          "label": "Number records",
+          "dataName": "numberRecords",
+          "populated": true
+        },
+        {
+          "label": "Title",
+          "dataName": "Title_out",
+          "populated": true
+        },
+        {
+          "label": "First name",
+          "dataName": "firstName",
+          "populated": true
+        },
+        {
+          "label": "Last name",
+          "dataName": "lastName",
+          "populated": true
+        },
+        {
+          "label": "Organisation name",
+          "dataName": "organisationName",
+          "populated": true
+        },
+        {
+          "label": "Job title",
+          "dataName": "jobTitle",
+          "populated": true
+        },
+        {
+          "label": "Email address",
+          "dataName": "emailAddress",
+          "populated": true
+        },
+        {
+          "label": "Contact number",
+          "dataName": "telephone",
+          "populated": true
+        },
+        {
+          "label": "Dietary requirements (please leave blank if none)",
+          "dataName": "dietaryRequirements",
+          "populated": true
+        },
+        {
+          "label": "fullName",
+          "dataName": "fullName",
+          "populated": true
+        },
+        {
+          "label": "fullName2",
+          "dataName": "fullName2",
+          "populated": true
+        }
+      ]
+    }
+  }
+}
